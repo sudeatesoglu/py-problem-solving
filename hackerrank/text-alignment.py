@@ -25,13 +25,13 @@ def square(n):
         print(pattern)
 
 
-n = int(input())
-if n % 2 != 0:
-    straight_pyramid(n)
-    square(n)
-    rectangle(n)
-    square(n)
-    reverse_pyramid(n)
+N = int(input())
+if N % 2 != 0:
+    straight_pyramid(N)
+    square(N)
+    rectangle(N)
+    square(N)
+    reverse_pyramid(N)
 else:
     warning = "n should be a odd integer!"
     print(warning)
