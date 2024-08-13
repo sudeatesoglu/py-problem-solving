@@ -4,11 +4,25 @@ def mutate_string(string, position, character):
     string_list = []
     for index in range(position):
         string_list.append(string[index])
+
     string_list.append(character)
+
     for remaining_index in range((position+1), string_length):
         string_list.append(string[remaining_index])
+
     altered_string = "".join(string_list)
+
     return altered_string
+
+
+'''
+>>> string = "abracadabra"
+>>> l = list(string)
+>>> l[5] = 'k'
+>>> string = ''.join(l)
+>>> print string
+abrackdabra
+'''
 
 
 if __name__ == '__main__':
